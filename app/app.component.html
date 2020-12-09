@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+<select name="city" class="rounded-inputs20 select-select col-md-3" (change)="onChange($event.target.value)">
+  <option *ngFor="let country of countries"  [value]="country.id">{{country.name}}</option>
+  </select>
